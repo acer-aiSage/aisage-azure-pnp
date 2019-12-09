@@ -78,13 +78,13 @@ char* Deviceinfo_Property_GetOsName()
 char* Deviceinfo_Property_GetProcessorArchitecture()
 {
     // TODO: provide implementation here
-    return "aarch64";
+    return "arm64";
 }
 
 char* Deviceinfo_Property_GetProcessorManufacturer()
 {
     // TODO: provide implementation here
-    return "RK3399";
+    return "Rochchip";
 }
 
 long Deviceinfo_Property_GetTotalStorage()
@@ -200,6 +200,7 @@ DIGITALTWIN_COMMAND_RESULT Sensor_Command_Reboot(unsigned int* statusCode)
 
     *statusCode = 200;
     LogInfo("Execute 'reboot' command successfully");
+    system("sudo reboot");
     return DIGITALTWIN_COMMAND_OK;
 }
 
