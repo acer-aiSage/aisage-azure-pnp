@@ -1,0 +1,5 @@
+Package: aiSageAzurePnP
+Version: 1.000.01
+Architecture: arm64
+Description: This is a package let aiSage connect to azure iot plug and play.
+Maintainer: developer <ch.huang@acer.com>
