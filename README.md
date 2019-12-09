@@ -1,0 +1,1 @@
+# aisage-azure-pnp
